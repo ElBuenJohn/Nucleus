@@ -1,0 +1,17 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.nucleos{
+    margin-top: 3rem;
+
+    &__grid{
+        display: flex;
+        flex-direction: column-reverse;
+        @include m.tablet { 
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 5rem;
+        align-items: center;
+        }
+    }
+ }
